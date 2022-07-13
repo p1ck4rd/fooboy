@@ -38,6 +38,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0x36:
+            printf("LD (HL), %x\n", buffer[pc + 1]);
+            length++;
+            break;
+
         case 0x3E:
             printf("LD A, %x\n", buffer[pc + 1]);
             length++;
