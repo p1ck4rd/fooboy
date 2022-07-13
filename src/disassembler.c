@@ -227,12 +227,40 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD L, L\n");
             break;
 
-         case 0x6E:
+        case 0x6E:
             printf("LD L, (HL)\n");
             break;
 
         case 0x6F:
             printf("LD L, A\n");
+            break;
+
+        case 0x70:
+            printf("LD (HL), B\n");
+            break;
+
+        case 0x71:
+            printf("LD (HL), C\n");
+            break;
+
+        case 0x72:
+            printf("LD (HL), D\n");
+            break;
+
+        case 0x73:
+            printf("LD (HL), E\n");
+            break;
+
+        case 0x74:
+            printf("LD (HL), H\n");
+            break;
+
+        case 0x75:
+            printf("LD (HL), L\n");
+            break;
+
+        case 0x77:
+            printf("LD (HL), A\n");
             break;
 
         case 0x78:
