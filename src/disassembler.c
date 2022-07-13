@@ -67,6 +67,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD B, L\n");
             break;
 
+        case 0x46:
+            printf("LD B, (HL)\n");
+            break;
+
         case 0x47:
             printf("LD B, A\n");
             break;
@@ -93,6 +97,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x4D:
             printf("LD C, L\n");
+            break;
+
+        case 0x4E:
+            printf("LD C, (HL)\n");
             break;
 
         case 0x4F:
@@ -123,6 +131,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD D, L\n");
             break;
 
+        case 0x56:
+            printf("LD D, (HL)\n");
+            break;
+
         case 0x57:
             printf("LD D, A\n");
             break;
@@ -149,6 +161,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x5D:
             printf("LD E, L\n");
+            break;
+
+        case 0x5E:
+            printf("LD E, (HL)\n");
             break;
 
         case 0x5F:
@@ -179,6 +195,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD H, L\n");
             break;
 
+        case 0x66:
+            printf("LD H, (HL)\n");
+            break;
+
         case 0x67:
             printf("LD H, A\n");
             break;
@@ -207,6 +227,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD L, L\n");
             break;
 
+         case 0x6E:
+            printf("LD L, (HL)\n");
+            break;
+
         case 0x6F:
             printf("LD L, A\n");
             break;
@@ -233,6 +257,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x7D:
             printf("LD A, L\n");
+            break;
+
+        case 0x7E:
+            printf("LD A, (HL)\n");
             break;
 
         case 0x7F:
