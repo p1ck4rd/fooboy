@@ -5,12 +5,20 @@
 unsigned char disassemble(unsigned char *buffer, int pc) {
     unsigned char length = 1;
     unsigned char opcode = buffer[pc];
-    printf("PC: %x Opcode: %x\n", pc, opcode);
+    printf("PC: %X Opcode: %X\n", pc, opcode);
 
     switch (opcode) {
+        case 0x02:
+            printf("LD (BC), A\n");
+            break;
+
         case 0x06:
             printf("LD B, %x\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0x0A:
+            printf("LD A, (BC)\n");
             break;
 
         case 0x0E:
@@ -18,9 +26,17 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0x12:
+            printf("LD (DE), A\n");
+            break;
+
         case 0x16:
             printf("LD D, %x\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0x1A:
+            printf("LD A, (DE)\n");
             break;
 
         case 0x1E:
