@@ -13,7 +13,7 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x06:
-            printf("LD B, %x\n", buffer[pc + 1]);
+            printf("LD B, %X\n", buffer[pc + 1]);
             length++;
             break;
 
@@ -22,7 +22,7 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x0E:
-            printf("LD C, %x\n", buffer[pc + 1]);
+            printf("LD C, %X\n", buffer[pc + 1]);
             length++;
             break;
 
@@ -31,7 +31,7 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x16:
-            printf("LD D, %x\n", buffer[pc + 1]);
+            printf("LD D, %X\n", buffer[pc + 1]);
             length++;
             break;
 
@@ -40,12 +40,12 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x1E:
-            printf("LD E, %x\n", buffer[pc + 1]);
+            printf("LD E, %X\n", buffer[pc + 1]);
             length++;
             break;
 
         case 0x26:
-            printf("LD H, %x\n", buffer[pc + 1]);
+            printf("LD H, %X\n", buffer[pc + 1]);
             length++;
             break;
 
@@ -55,12 +55,12 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x36:
-            printf("LD (HL), %x\n", buffer[pc + 1]);
+            printf("LD (HL), %X\n", buffer[pc + 1]);
             length++;
             break;
 
         case 0x3E:
-            printf("LD A, %x\n", buffer[pc + 1]);
+            printf("LD A, %X\n", buffer[pc + 1]);
             length++;
             break;
 
@@ -314,6 +314,16 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x7F:
             printf("LD A, A\n");
+            break;
+
+        case 0xEA:
+            printf("LD (%X%X), A\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
+            break;
+
+        case 0xFA:
+            printf("LD A, (%X%X)\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
             break;
 
         default:
