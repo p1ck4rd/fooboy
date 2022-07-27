@@ -316,6 +316,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD A, A\n");
             break;
 
+        case 0xE0:
+            printf("LDH (%X), A\n", buffer[pc + 1]);
+            length++;
+            break;
+
         case 0xE2:
             printf("LDH (C), A\n");
             break;
@@ -323,6 +328,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0xEA:
             printf("LD (%X%X), A\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
+            break;
+
+        case 0xF0:
+            printf("LDH A, (%X)\n", buffer[pc + 1]);
+            length++;
             break;
 
         case 0xF2:
