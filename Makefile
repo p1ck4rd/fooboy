@@ -1,2 +1,4 @@
 build:
-	gcc src/*.c -o fooboy.out
+	gcc src/main.c src/disassembler.c -o fooboy.out
+
+all: build
