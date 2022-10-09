@@ -44,9 +44,17 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0x22:
+            printf("LD (HL+), A\n");
+            break;
+
         case 0x26:
             printf("LD H, %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0x2A:
+            printf("LD A, (HL+)\n");
             break;
 
         case 0x2E:
