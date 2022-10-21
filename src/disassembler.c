@@ -389,6 +389,38 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("ADD A\n");
             break;
 
+        case 0x88:
+            printf("ADC B\n");
+            break;
+
+        case 0x89:
+            printf("ADC C\n");
+            break;
+
+        case 0x8A:
+            printf("ADC D\n");
+            break;
+
+        case 0x8B:
+            printf("ADC E\n");
+            break;
+
+        case 0x8C:
+            printf("ADC H\n");
+            break;
+
+        case 0x8D:
+            printf("ADC L\n");
+            break;
+
+        case 0x8E:
+            printf("ADC (HL)\n");
+            break;
+
+        case 0x8F:
+            printf("ADC A\n");
+            break;
+
         case 0xC1:
             printf("POP BC\n");
             break;
@@ -399,6 +431,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0xC6:
             printf("ADD %X\n", buffer[pc + 1]);
+            length++;
+            break;
+
+        case 0xCE:
+            printf("ADC %X\n", buffer[pc + 1]);
             length++;
             break;
 
