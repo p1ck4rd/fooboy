@@ -421,6 +421,38 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("ADC A\n");
             break;
 
+        case 0x90:
+            printf("SUB B\n");
+            break;
+
+        case 0x91:
+            printf("SUB C\n");
+            break;
+
+        case 0x92:
+            printf("SUB D\n");
+            break;
+
+        case 0x93:
+            printf("SUB E\n");
+            break;
+
+        case 0x94:
+            printf("SUB H\n");
+            break;
+
+        case 0x95:
+            printf("SUB L\n");
+            break;
+
+        case 0x96:
+            printf("SUB (HL)\n");
+            break;
+
+        case 0x97:
+            printf("SUB A\n");
+            break;
+
         case 0xC1:
             printf("POP BC\n");
             break;
@@ -445,6 +477,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0xD5:
             printf("PUSH DE\n");
+            break;
+
+        case 0xD6:
+            printf("SUB %X\n", buffer[pc + 1]);
+            length++;
             break;
 
         case 0xE0:
