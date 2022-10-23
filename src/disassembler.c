@@ -517,6 +517,38 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("AND A\n");
             break;
 
+        case 0xA8:
+            printf("XOR B\n");
+            break;
+
+        case 0xA9:
+            printf("XOR C\n");
+            break;
+
+        case 0xAA:
+            printf("XOR D\n");
+            break;
+
+        case 0xAB:
+            printf("XOR E\n");
+            break;
+
+        case 0xAC:
+            printf("XOR H\n");
+            break;
+
+        case 0xAD:
+            printf("XOR L\n");
+            break;
+
+        case 0xAE:
+            printf("XOR (HL)\n");
+            break;
+
+        case 0xAF:
+            printf("XOR A\n");
+            break;
+
         case 0xC1:
             printf("POP BC\n");
             break;
@@ -578,6 +610,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0xEA:
             printf("LD (%X%X), A\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
+            break;
+
+        case 0xEE:
+            printf("XOR %X\n", buffer[pc + 1]);
+            length++;
             break;
 
         case 0xF0:
