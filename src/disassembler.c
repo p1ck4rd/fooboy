@@ -35,6 +35,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length += 2;
             break;
 
+        case 0x09:
+            printf("ADD HL, BC\n");
+            break;
+
         case 0x0A:
             printf("LD A, (BC)\n");
             break;
@@ -72,6 +76,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0x16:
             printf("LD D, %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0x19:
+            printf("ADD HL, DE\n");
             break;
 
         case 0x1A:
@@ -113,6 +121,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0x29:
+            printf("ADD HL, HL\n");
+            break;
+
         case 0x2A:
             printf("LD A, (HL+)\n");
             break;
@@ -150,6 +162,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0x36:
             printf("LD (HL), %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0x39:
+            printf("ADD HL, SP\n");
             break;
 
         case 0x3A:
