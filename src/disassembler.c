@@ -17,6 +17,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD (BC), A\n");
             break;
 
+        case 0x04:
+            printf("INC B\n");
+            break;
+
         case 0x06:
             printf("LD B, %X\n", buffer[pc + 1]);
             length++;
@@ -29,6 +33,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x0A:
             printf("LD A, (BC)\n");
+            break;
+
+        case 0x0C:
+            printf("INC C\n");
             break;
 
         case 0x0E:
@@ -45,6 +53,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD (DE), A\n");
             break;
 
+        case 0x14:
+            printf("INC D\n");
+            break;
+
         case 0x16:
             printf("LD D, %X\n", buffer[pc + 1]);
             length++;
@@ -52,6 +64,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x1A:
             printf("LD A, (DE)\n");
+            break;
+
+        case 0x1C:
+            printf("INC E\n");
             break;
 
         case 0x1E:
@@ -68,6 +84,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD (HL+), A\n");
             break;
 
+        case 0x24:
+            printf("INC H\n");
+            break;
+
         case 0x26:
             printf("LD H, %X\n", buffer[pc + 1]);
             length++;
@@ -75,6 +95,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x2A:
             printf("LD A, (HL+)\n");
+            break;
+
+        case 0x2C:
+            printf("INC L\n");
             break;
 
         case 0x2E:
@@ -91,6 +115,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD (HL-), A\n");
             break;
 
+        case 0x34:
+            printf("INC (HL)\n");
+            break;
+
         case 0x36:
             printf("LD (HL), %X\n", buffer[pc + 1]);
             length++;
@@ -98,6 +126,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x3A:
             printf("LD A, (HL-)\n");
+            break;
+
+        case 0x3C:
+            printf("INC A\n");
             break;
 
         case 0x3E:
