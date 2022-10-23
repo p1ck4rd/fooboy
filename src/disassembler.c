@@ -485,6 +485,38 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("SBC A\n");
             break;
 
+        case 0xA0:
+            printf("AND B\n");
+            break;
+
+        case 0xA1:
+            printf("AND C\n");
+            break;
+
+        case 0xA2:
+            printf("AND D\n");
+            break;
+
+        case 0xA3:
+            printf("AND E\n");
+            break;
+
+        case 0xA4:
+            printf("AND H\n");
+            break;
+
+        case 0xA5:
+            printf("AND L\n");
+            break;
+
+        case 0xA6:
+            printf("AND (HL)\n");
+            break;
+
+        case 0xA7:
+            printf("AND A\n");
+            break;
+
         case 0xC1:
             printf("POP BC\n");
             break;
@@ -536,6 +568,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0xE5:
             printf("PUSH HL\n");
+            break;
+
+        case 0xE6:
+            printf("AND %X\n", buffer[pc + 1]);
+            length++;
             break;
 
         case 0xEA:
