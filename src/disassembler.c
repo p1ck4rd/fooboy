@@ -549,6 +549,38 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("XOR A\n");
             break;
 
+        case 0xB0:
+            printf("OR B\n");
+            break;
+
+        case 0xB1:
+            printf("OR C\n");
+            break;
+
+        case 0xB2:
+            printf("OR D\n");
+            break;
+
+        case 0xB3:
+            printf("OR E\n");
+            break;
+
+        case 0xB4:
+            printf("OR H\n");
+            break;
+
+        case 0xB5:
+            printf("OR L\n");
+            break;
+
+        case 0xB6:
+            printf("OR (HL)\n");
+            break;
+
+        case 0xB7:
+            printf("OR A\n");
+            break;
+
         case 0xC1:
             printf("POP BC\n");
             break;
@@ -632,6 +664,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0xF5:
             printf("PUSH AF\n");
+            break;
+
+        case 0xF6:
+            printf("OR %X\n", buffer[pc + 1]);
             break;
 
         case 0xF8:
