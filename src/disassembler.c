@@ -581,6 +581,38 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("OR A\n");
             break;
 
+        case 0xB8:
+            printf("CP B\n");
+            break;
+
+        case 0xB9:
+            printf("CP C\n");
+            break;
+
+        case 0xBA:
+            printf("CP D\n");
+            break;
+
+        case 0xBB:
+            printf("CP E\n");
+            break;
+
+        case 0xBC:
+            printf("CP H\n");
+            break;
+
+        case 0xBD:
+            printf("CP L\n");
+            break;
+
+        case 0xBE:
+            printf("CP (HL)\n");
+            break;
+
+        case 0xBF:
+            printf("CP A\n");
+            break;
+
         case 0xC1:
             printf("POP BC\n");
             break;
@@ -682,6 +714,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0xFA:
             printf("LD A, (%X%X)\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
+            break;
+
+        case 0xFE:
+            printf("CP %X", buffer[pc + 1]);
+            length++;
             break;
 
         default:
