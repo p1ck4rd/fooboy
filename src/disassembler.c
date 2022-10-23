@@ -21,6 +21,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("INC B\n");
             break;
 
+        case 0x05:
+            printf("DEC B\n");
+            break;
+
         case 0x06:
             printf("LD B, %X\n", buffer[pc + 1]);
             length++;
@@ -37,6 +41,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x0C:
             printf("INC C\n");
+            break;
+
+        case 0x0D:
+            printf("DEC C\n");
             break;
 
         case 0x0E:
@@ -57,6 +65,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("INC D\n");
             break;
 
+        case 0x15:
+            printf("DEC D\n");
+            break;
+
         case 0x16:
             printf("LD D, %X\n", buffer[pc + 1]);
             length++;
@@ -68,6 +80,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x1C:
             printf("INC E\n");
+            break;
+
+        case 0x1D:
+            printf("DEC E\n");
             break;
 
         case 0x1E:
@@ -88,6 +104,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("INC H\n");
             break;
 
+        case 0x25:
+            printf("DEC H\n");
+            break;
+
         case 0x26:
             printf("LD H, %X\n", buffer[pc + 1]);
             length++;
@@ -99,6 +119,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x2C:
             printf("INC L\n");
+            break;
+
+        case 0x2D:
+            printf("DEC L\n");
             break;
 
         case 0x2E:
@@ -119,6 +143,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("INC (HL)\n");
             break;
 
+        case 0x35:
+            printf("DEC (HL)\n");
+            break;
+
         case 0x36:
             printf("LD (HL), %X\n", buffer[pc + 1]);
             length++;
@@ -130,6 +158,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x3C:
             printf("INC A\n");
+            break;
+
+        case 0x3D:
+            printf("DEC A\n");
             break;
 
         case 0x3E:
