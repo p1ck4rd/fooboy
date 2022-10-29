@@ -17,6 +17,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD (BC), A\n");
             break;
 
+        case 0x03:
+            printf("INC BC\n");
+            break;
+
         case 0x04:
             printf("INC B\n");
             break;
@@ -65,6 +69,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD (DE), A\n");
             break;
 
+        case 0x13:
+            printf("INC DE\n");
+            break;
+
         case 0x14:
             printf("INC D\n");
             break;
@@ -108,6 +116,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("LD (HL+), A\n");
             break;
 
+        case 0x23:
+            printf("INC HL\n");
+            break;
+
         case 0x24:
             printf("INC H\n");
             break;
@@ -149,6 +161,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x32:
             printf("LD (HL-), A\n");
+            break;
+
+        case 0x33:
+            printf("INC SP\n");
             break;
 
         case 0x34:
