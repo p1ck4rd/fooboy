@@ -783,6 +783,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0xE8:
+            printf("ADD SP, %d\n", (signed char) buffer[pc + 1]);
+            length++;
+            break;
+
         case 0xEA:
             printf("LD (%X%X), A\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
