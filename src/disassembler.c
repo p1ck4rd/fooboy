@@ -34,6 +34,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0x07:
+            printf("RLCA\n");
+            break;
+
         case 0x08:
             printf("LD (%X%X), SP\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
@@ -64,6 +68,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0x0F:
+            printf("RRCA\n");
+            break;
+
         case 0x11:
             printf("LD DE, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
@@ -90,6 +98,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0x17:
+            printf("RLA\n");
+            break;
+
         case 0x19:
             printf("ADD HL, DE\n");
             break;
@@ -113,6 +125,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0x1E:
             printf("LD E, %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0x1F:
+            printf("RRA\n");
             break;
 
         case 0x21:
