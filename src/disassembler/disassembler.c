@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+#include "cb_disassembler.h"
+
 unsigned char disassemble(unsigned char *buffer, int pc) {
     unsigned char length = 1;
     unsigned char opcode = buffer[pc];
@@ -751,6 +753,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0xC6:
             printf("ADD %X\n", buffer[pc + 1]);
+            length++;
+            break;
+
+        case 0xCB:
+            disassembleCB(buffer[pc + 1]);
             length++;
             break;
 
