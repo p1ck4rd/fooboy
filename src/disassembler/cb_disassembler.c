@@ -36,6 +36,38 @@ void disassembleCB(unsigned char opcode) {
             printf("RLC A\n");
             break;
 
+        case 0x08:
+            printf("RRC B\n");
+            break;
+
+        case 0x09:
+            printf("RRC C\n");
+            break;
+
+        case 0x0A:
+            printf("RRC D\n");
+            break;
+
+        case 0x0B:
+            printf("RRC E\n");
+            break;
+
+        case 0x0C:
+            printf("RRC H\n");
+            break;
+
+        case 0x0D:
+            printf("RRC L\n");
+            break;
+
+        case 0x0E:
+            printf("RRC (HL)\n");
+            break;
+
+        case 0x0F:
+            printf("RRC A\n");
+            break;
+
         case 0x10:
             printf("RL B\n");
             break;
