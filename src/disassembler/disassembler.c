@@ -7,7 +7,7 @@
 unsigned char disassemble(unsigned char *buffer, int pc) {
     unsigned char length = 1;
     unsigned char opcode = buffer[pc];
-    printf("PC: %X Opcode: %X\n", pc, opcode);
+    printf("PC: %X OP: %X\n", pc, opcode);
 
     switch (opcode) {
         case 0x01:

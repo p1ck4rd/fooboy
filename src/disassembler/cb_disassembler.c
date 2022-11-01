@@ -3,6 +3,8 @@
 #include <stdio.h>
 
 void disassembleCB(unsigned char opcode) {
+    printf("CB-prefixed instruction OP: %X\n", opcode);
+
     switch (opcode) {
         case 0x00:
             printf("RLC B\n");
@@ -226,6 +228,38 @@ void disassembleCB(unsigned char opcode) {
 
         case 0x37:
             printf("SWAP A\n");
+            break;
+
+        case 0x38:
+            printf("SRL B\n");
+            break;
+
+        case 0x39:
+            printf("SRL C\n");
+            break;
+
+        case 0x3A:
+            printf("SRL D\n");
+            break;
+
+        case 0x3B:
+            printf("SRL E\n");
+            break;
+
+        case 0x3C:
+            printf("SRL H\n");
+            break;
+
+        case 0x3D:
+            printf("SRL L\n");
+            break;
+
+        case 0x3E:
+            printf("SRL (HL)\n");
+            break;
+
+        case 0x3F:
+            printf("SRL A\n");
             break;
 
         default:
