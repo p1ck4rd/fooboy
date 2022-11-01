@@ -164,6 +164,38 @@ void disassembleCB(unsigned char opcode) {
             printf("SLA A\n");
             break;
 
+        case 0x28:
+            printf("SRA B\n");
+            break;
+
+        case 0x29:
+            printf("SRA C\n");
+            break;
+
+        case 0x2A:
+            printf("SRA D\n");
+            break;
+
+        case 0x2B:
+            printf("SRA E\n");
+            break;
+
+        case 0x2C:
+            printf("SRA H\n");
+            break;
+
+        case 0x2D:
+            printf("SRA L\n");
+            break;
+
+        case 0x2E:
+            printf("SRA (HL)\n");
+            break;
+
+        case 0x2F:
+            printf("SRA A\n");
+            break;
+
         case 0x30:
             printf("SWAP B\n");
             break;
