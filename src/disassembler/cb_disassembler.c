@@ -262,6 +262,262 @@ void disassembleCB(unsigned char opcode) {
             printf("SRL A\n");
             break;
 
+        case 0x40:
+            printf("BIT 0, B\n");
+            break;
+
+        case 0x41:
+            printf("BIT 0, C\n");
+            break;
+
+        case 0x42:
+            printf("BIT 0, D\n");
+            break;
+
+        case 0x43:
+            printf("BIT 0, E\n");
+            break;
+
+        case 0x44:
+            printf("BIT 0, H\n");
+            break;
+
+        case 0x45:
+            printf("BIT 0, L\n");
+            break;
+
+        case 0x46:
+            printf("BIT 0, (HL)\n");
+            break;
+
+        case 0x47:
+            printf("BIT 0, A\n");
+            break;
+
+        case 0x48:
+            printf("BIT 1, B\n");
+            break;
+
+        case 0x49:
+            printf("BIT 1, C\n");
+            break;
+
+        case 0x4A:
+            printf("BIT 1, D\n");
+            break;
+
+        case 0x4B:
+            printf("BIT 1, E\n");
+            break;
+
+        case 0x4C:
+            printf("BIT 1, H\n");
+            break;
+
+        case 0x4D:
+            printf("BIT 1, L\n");
+            break;
+
+        case 0x4E:
+            printf("BIT 1, (HL)\n");
+            break;
+
+        case 0x4F:
+            printf("BIT 1, A\n");
+            break;
+
+        case 0x50:
+            printf("BIT 2, B\n");
+            break;
+
+        case 0x51:
+            printf("BIT 2, C\n");
+            break;
+
+        case 0x52:
+            printf("BIT 2, D\n");
+            break;
+
+        case 0x53:
+            printf("BIT 2, E\n");
+            break;
+
+        case 0x54:
+            printf("BIT 2, H\n");
+            break;
+
+        case 0x55:
+            printf("BIT 2, L\n");
+            break;
+
+        case 0x56:
+            printf("BIT 2, (HL)\n");
+            break;
+
+        case 0x57:
+            printf("BIT 2, A\n");
+            break;
+
+        case 0x58:
+            printf("BIT 3, B\n");
+            break;
+
+        case 0x59:
+            printf("BIT 3, C\n");
+            break;
+
+        case 0x5A:
+            printf("BIT 3, D\n");
+            break;
+
+        case 0x5B:
+            printf("BIT 3, E\n");
+            break;
+
+        case 0x5C:
+            printf("BIT 3, H\n");
+            break;
+
+        case 0x5D:
+            printf("BIT 3, L\n");
+            break;
+
+        case 0x5E:
+            printf("BIT 3, (HL)\n");
+            break;
+
+        case 0x5F:
+            printf("BIT 3, A\n");
+            break;
+
+        case 0x60:
+            printf("BIT 4, B\n");
+            break;
+
+        case 0x61:
+            printf("BIT 4, C\n");
+            break;
+
+        case 0x62:
+            printf("BIT 4, D\n");
+            break;
+
+        case 0x63:
+            printf("BIT 4, E\n");
+            break;
+
+        case 0x64:
+            printf("BIT 4, H\n");
+            break;
+
+        case 0x65:
+            printf("BIT 4, L\n");
+            break;
+
+        case 0x66:
+            printf("BIT 4, (HL)\n");
+            break;
+
+        case 0x67:
+            printf("BIT 4, A\n");
+            break;
+
+        case 0x68:
+            printf("BIT 5, B\n");
+            break;
+
+        case 0x69:
+            printf("BIT 5, C\n");
+            break;
+
+        case 0x6A:
+            printf("BIT 5, D\n");
+            break;
+
+        case 0x6B:
+            printf("BIT 5, E\n");
+            break;
+
+        case 0x6C:
+            printf("BIT 5, H\n");
+            break;
+
+        case 0x6D:
+            printf("BIT 5, L\n");
+            break;
+
+        case 0x6E:
+            printf("BIT 5, (HL)\n");
+            break;
+
+        case 0x6F:
+            printf("BIT 5, A\n");
+            break;
+
+        case 0x70:
+            printf("BIT 6, B\n");
+            break;
+
+        case 0x71:
+            printf("BIT 6, C\n");
+            break;
+
+        case 0x72:
+            printf("BIT 6, D\n");
+            break;
+
+        case 0x73:
+            printf("BIT 6, E\n");
+            break;
+
+        case 0x74:
+            printf("BIT 6, H\n");
+            break;
+
+        case 0x75:
+            printf("BIT 6, L\n");
+            break;
+
+        case 0x76:
+            printf("BIT 6, (HL)\n");
+            break;
+
+        case 0x77:
+            printf("BIT 6, A\n");
+            break;
+
+        case 0x78:
+            printf("BIT 7, B\n");
+            break;
+
+        case 0x79:
+            printf("BIT 7, C\n");
+            break;
+
+        case 0x7A:
+            printf("BIT 7, D\n");
+            break;
+
+        case 0x7B:
+            printf("BIT 7, E\n");
+            break;
+
+        case 0x7C:
+            printf("BIT 7, H\n");
+            break;
+
+        case 0x7D:
+            printf("BIT 7, L\n");
+            break;
+
+        case 0x7E:
+            printf("BIT 7, (HL)\n");
+            break;
+
+        case 0x7F:
+            printf("BIT 7, A\n");
+            break;
+
         default:
             printf("Unknown opcode\n");
             break;
