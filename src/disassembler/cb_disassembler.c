@@ -518,6 +518,262 @@ void disassembleCB(unsigned char opcode) {
             printf("BIT 7, A\n");
             break;
 
+        case 0x80:
+            printf("RES 0, B\n");
+            break;
+
+        case 0x81:
+            printf("RES 0, C\n");
+            break;
+
+        case 0x82:
+            printf("RES 0, D\n");
+            break;
+
+        case 0x83:
+            printf("RES 0, E\n");
+            break;
+
+        case 0x84:
+            printf("RES 0, H\n");
+            break;
+
+        case 0x85:
+            printf("RES 0, L\n");
+            break;
+
+        case 0x86:
+            printf("RES 0, (HL)\n");
+            break;
+
+        case 0x87:
+            printf("RES 0, A\n");
+            break;
+
+        case 0x88:
+            printf("RES 1, B\n");
+            break;
+
+        case 0x89:
+            printf("RES 1, C\n");
+            break;
+
+        case 0x8A:
+            printf("RES 1, D\n");
+            break;
+
+        case 0x8B:
+            printf("RES 1, E\n");
+            break;
+
+        case 0x8C:
+            printf("RES 1, H\n");
+            break;
+
+        case 0x8D:
+            printf("RES 1, L\n");
+            break;
+
+        case 0x8E:
+            printf("RES 1, (HL)\n");
+            break;
+
+        case 0x8F:
+            printf("RES 1, A\n");
+            break;
+
+        case 0x90:
+            printf("RES 2, B\n");
+            break;
+
+        case 0x91:
+            printf("RES 2, C\n");
+            break;
+
+        case 0x92:
+            printf("RES 2, D\n");
+            break;
+
+        case 0x93:
+            printf("RES 2, E\n");
+            break;
+
+        case 0x94:
+            printf("RES 2, H\n");
+            break;
+
+        case 0x95:
+            printf("RES 2, L\n");
+            break;
+
+        case 0x96:
+            printf("RES 2, (HL)\n");
+            break;
+
+        case 0x97:
+            printf("RES 2, A\n");
+            break;
+
+        case 0x98:
+            printf("RES 3, B\n");
+            break;
+
+        case 0x99:
+            printf("RES 3, C\n");
+            break;
+
+        case 0x9A:
+            printf("RES 3, D\n");
+            break;
+
+        case 0x9B:
+            printf("RES 3, E\n");
+            break;
+
+        case 0x9C:
+            printf("RES 3, H\n");
+            break;
+
+        case 0x9D:
+            printf("RES 3, L\n");
+            break;
+
+        case 0x9E:
+            printf("RES 3, (HL)\n");
+            break;
+
+        case 0x9F:
+            printf("RES 3, A\n");
+            break;
+
+        case 0xA0:
+            printf("RES 4, B\n");
+            break;
+
+        case 0xA1:
+            printf("RES 4, C\n");
+            break;
+
+        case 0xA2:
+            printf("RES 4, D\n");
+            break;
+
+        case 0xA3:
+            printf("RES 4, E\n");
+            break;
+
+        case 0xA4:
+            printf("RES 4, H\n");
+            break;
+
+        case 0xA5:
+            printf("RES 4, L\n");
+            break;
+
+        case 0xA6:
+            printf("RES 4, (HL)\n");
+            break;
+
+        case 0xA7:
+            printf("RES 4, A\n");
+            break;
+
+        case 0xA8:
+            printf("RES 5, B\n");
+            break;
+
+        case 0xA9:
+            printf("RES 5, C\n");
+            break;
+
+        case 0xAA:
+            printf("RES 5, D\n");
+            break;
+
+        case 0xAB:
+            printf("RES 5, E\n");
+            break;
+
+        case 0xAC:
+            printf("RES 5, H\n");
+            break;
+
+        case 0xAD:
+            printf("RES 5, L\n");
+            break;
+
+        case 0xAE:
+            printf("RES 5, (HL)\n");
+            break;
+
+        case 0xAF:
+            printf("RES 5, A\n");
+            break;
+
+        case 0xB0:
+            printf("RES 6, B\n");
+            break;
+
+        case 0xB1:
+            printf("RES 6, C\n");
+            break;
+
+        case 0xB2:
+            printf("RES 6, D\n");
+            break;
+
+        case 0xB3:
+            printf("RES 6, E\n");
+            break;
+
+        case 0xB4:
+            printf("RES 6, H\n");
+            break;
+
+        case 0xB5:
+            printf("RES 6, L\n");
+            break;
+
+        case 0xB6:
+            printf("RES 6, (HL)\n");
+            break;
+
+        case 0xB7:
+            printf("RES 6, A\n");
+            break;
+
+        case 0xB8:
+            printf("RES 7, B\n");
+            break;
+
+        case 0xB9:
+            printf("RES 7, C\n");
+            break;
+
+        case 0xBA:
+            printf("RES 7, D\n");
+            break;
+
+        case 0xBB:
+            printf("RES 7, E\n");
+            break;
+
+        case 0xBC:
+            printf("RES 7, H\n");
+            break;
+
+        case 0xBD:
+            printf("RES 7, L\n");
+            break;
+
+        case 0xBE:
+            printf("RES 7, (HL)\n");
+            break;
+
+        case 0xBF:
+            printf("RES 7, A\n");
+            break;
+
         case 0xC0:
             printf("SET 0, B\n");
             break;
