@@ -518,6 +518,262 @@ void disassembleCB(unsigned char opcode) {
             printf("BIT 7, A\n");
             break;
 
+        case 0xC0:
+            printf("SET 0, B\n");
+            break;
+
+        case 0xC1:
+            printf("SET 0, C\n");
+            break;
+
+        case 0xC2:
+            printf("SET 0, D\n");
+            break;
+
+        case 0xC3:
+            printf("SET 0, E\n");
+            break;
+
+        case 0xC4:
+            printf("SET 0, H\n");
+            break;
+
+        case 0xC5:
+            printf("SET 0, L\n");
+            break;
+
+        case 0xC6:
+            printf("SET 0, (HL)\n");
+            break;
+
+        case 0xC7:
+            printf("SET 0, A\n");
+            break;
+
+        case 0xC8:
+            printf("SET 1, B\n");
+            break;
+
+        case 0xC9:
+            printf("SET 1, C\n");
+            break;
+
+        case 0xCA:
+            printf("SET 1, D\n");
+            break;
+
+        case 0xCB:
+            printf("SET 1, E\n");
+            break;
+
+        case 0xCC:
+            printf("SET 1, H\n");
+            break;
+
+        case 0xCD:
+            printf("SET 1, L\n");
+            break;
+
+        case 0xCE:
+            printf("SET 1, (HL)\n");
+            break;
+
+        case 0xCF:
+            printf("SET 1, A\n");
+            break;
+
+        case 0xD0:
+            printf("SET 2, B\n");
+            break;
+
+        case 0xD1:
+            printf("SET 2, C\n");
+            break;
+
+        case 0xD2:
+            printf("SET 2, D\n");
+            break;
+
+        case 0xD3:
+            printf("SET 2, E\n");
+            break;
+
+        case 0xD4:
+            printf("SET 2, H\n");
+            break;
+
+        case 0xD5:
+            printf("SET 2, L\n");
+            break;
+
+        case 0xD6:
+            printf("SET 2, (HL)\n");
+            break;
+
+        case 0xD7:
+            printf("SET 2, A\n");
+            break;
+
+        case 0xD8:
+            printf("SET 3, B\n");
+            break;
+
+        case 0xD9:
+            printf("SET 3, C\n");
+            break;
+
+        case 0xDA:
+            printf("SET 3, D\n");
+            break;
+
+        case 0xDB:
+            printf("SET 3, E\n");
+            break;
+
+        case 0xDC:
+            printf("SET 3, H\n");
+            break;
+
+        case 0xDD:
+            printf("SET 3, L\n");
+            break;
+
+        case 0xDE:
+            printf("SET 3, (HL)\n");
+            break;
+
+        case 0xDF:
+            printf("SET 3, A\n");
+            break;
+
+        case 0xE0:
+            printf("SET 4, B\n");
+            break;
+
+        case 0xE1:
+            printf("SET 4, C\n");
+            break;
+
+        case 0xE2:
+            printf("SET 4, D\n");
+            break;
+
+        case 0xE3:
+            printf("SET 4, E\n");
+            break;
+
+        case 0xE4:
+            printf("SET 4, H\n");
+            break;
+
+        case 0xE5:
+            printf("SET 4, L\n");
+            break;
+
+        case 0xE6:
+            printf("SET 4, (HL)\n");
+            break;
+
+        case 0xE7:
+            printf("SET 4, A\n");
+            break;
+
+        case 0xE8:
+            printf("SET 5, B\n");
+            break;
+
+        case 0xE9:
+            printf("SET 5, C\n");
+            break;
+
+        case 0xEA:
+            printf("SET 5, D\n");
+            break;
+
+        case 0xEB:
+            printf("SET 5, E\n");
+            break;
+
+        case 0xEC:
+            printf("SET 5, H\n");
+            break;
+
+        case 0xED:
+            printf("SET 5, L\n");
+            break;
+
+        case 0xEE:
+            printf("SET 5, (HL)\n");
+            break;
+
+        case 0xEF:
+            printf("SET 5, A\n");
+            break;
+
+        case 0xF0:
+            printf("SET 6, B\n");
+            break;
+
+        case 0xF1:
+            printf("SET 6, C\n");
+            break;
+
+        case 0xF2:
+            printf("SET 6, D\n");
+            break;
+
+        case 0xF3:
+            printf("SET 6, E\n");
+            break;
+
+        case 0xF4:
+            printf("SET 6, H\n");
+            break;
+
+        case 0xF5:
+            printf("SET 6, L\n");
+            break;
+
+        case 0xF6:
+            printf("SET 6, (HL)\n");
+            break;
+
+        case 0xF7:
+            printf("SET 6, A\n");
+            break;
+
+        case 0xF8:
+            printf("SET 7, B\n");
+            break;
+
+        case 0xF9:
+            printf("SET 7, C\n");
+            break;
+
+        case 0xFA:
+            printf("SET 7, D\n");
+            break;
+
+        case 0xFB:
+            printf("SET 7, E\n");
+            break;
+
+        case 0xFC:
+            printf("SET 7, H\n");
+            break;
+
+        case 0xFD:
+            printf("SET 7, L\n");
+            break;
+
+        case 0xFE:
+            printf("SET 7, (HL)\n");
+            break;
+
+        case 0xFF:
+            printf("SET 7, A\n");
+            break;
+
         default:
             printf("Unknown opcode\n");
             break;
