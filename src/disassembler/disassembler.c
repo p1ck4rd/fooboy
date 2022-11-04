@@ -104,6 +104,12 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("RLA\n");
             break;
 
+        case 0x18:
+            printf("JR %d\n", (signed char) buffer[pc + 1]);
+            length++;
+            break;
+
+
         case 0x19:
             printf("ADD HL, DE\n");
             break;
@@ -133,6 +139,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("RRA\n");
             break;
 
+        case 0x20:
+            printf("JR nz, %d\n", (signed char) buffer[pc + 1]);
+            length++;
+            break;
+
         case 0x21:
             printf("LD HL, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
@@ -156,6 +167,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x26:
             printf("LD H, %X\n", buffer[pc + 1]);
+            length++;
+            break;
+
+        case 0x28:
+            printf("JR z, %d\n", (signed char) buffer[pc + 1]);
             length++;
             break;
 
@@ -184,6 +200,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0x30:
+            printf("JR nc, %d\n", (signed char) buffer[pc + 1]);
+            length++;
+            break;
+
         case 0x31:
             printf("LD SP, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
@@ -207,6 +228,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x36:
             printf("LD (HL), %X\n", buffer[pc + 1]);
+            length++;
+            break;
+
+        case 0x38:
+            printf("JR c, %d\n", (signed char) buffer[pc + 1]);
             length++;
             break;
 
