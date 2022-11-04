@@ -747,6 +747,16 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("POP BC\n");
             break;
 
+        case 0xC2:
+            printf("JP nz, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
+            break;
+
+        case 0xC3:
+            printf("JP %X%X\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
+            break;
+
         case 0xC5:
             printf("PUSH BC\n");
             break;
@@ -754,6 +764,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0xC6:
             printf("ADD %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0xCA:
+            printf("JP z, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
             break;
 
         case 0xCB:
@@ -770,6 +785,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             printf("POP DE\n");
             break;
 
+        case 0xD2:
+            printf("JP nc, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
+            break;
+
         case 0xD5:
             printf("PUSH DE\n");
             break;
@@ -777,6 +797,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0xD6:
             printf("SUB %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0xDA:
+            printf("JP c, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
             break;
 
         case 0xDE:
@@ -809,6 +834,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0xE8:
             printf("ADD SP, %d\n", (signed char) buffer[pc + 1]);
             length++;
+            break;
+
+        case 0xE9:
+            printf("JP HL\n");
             break;
 
         case 0xEA:
