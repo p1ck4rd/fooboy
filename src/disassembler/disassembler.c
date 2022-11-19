@@ -783,6 +783,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length += 2;
             break;
 
+        case 0xC4:
+            printf("CALL nz, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
+            break;
+
         case 0xC5:
             printf("PUSH BC\n");
             break;
@@ -802,6 +807,16 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0xCC:
+            printf("CALL z, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
+            break;
+
+        case 0xCD:
+            printf("CALL %X%X\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
+            break;
+
         case 0xCE:
             printf("ADC %X\n", buffer[pc + 1]);
             length++;
@@ -816,6 +831,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length += 2;
             break;
 
+        case 0xD4:
+            printf("CALL nc, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
+            break;
+
         case 0xD5:
             printf("PUSH DE\n");
             break;
@@ -827,6 +847,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0xDA:
             printf("JP c, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
+            length += 2;
+            break;
+
+        case 0xDC:
+            printf("CALL c, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
             break;
 
