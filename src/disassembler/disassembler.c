@@ -16,19 +16,19 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x02:
-            printf("LD (BC), A\n");
+            puts("LD (BC), A");
             break;
 
         case 0x03:
-            printf("INC BC\n");
+            puts("INC BC");
             break;
 
         case 0x04:
-            printf("INC B\n");
+            puts("INC B");
             break;
 
         case 0x05:
-            printf("DEC B\n");
+            puts("DEC B");
             break;
 
         case 0x06:
@@ -37,7 +37,7 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x07:
-            printf("RLCA\n");
+            puts("RLCA");
             break;
 
         case 0x08:
@@ -46,23 +46,23 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x09:
-            printf("ADD HL, BC\n");
+            puts("ADD HL, BC");
             break;
 
         case 0x0A:
-            printf("LD A, (BC)\n");
+            puts("LD A, (BC)");
             break;
 
         case 0x0B:
-            printf("DEC BC\n");
+            puts("DEC BC");
             break;
 
         case 0x0C:
-            printf("INC C\n");
+            puts("INC C");
             break;
 
         case 0x0D:
-            printf("DEC C\n");
+            puts("DEC C");
             break;
 
         case 0x0E:
@@ -71,7 +71,7 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x0F:
-            printf("RRCA\n");
+            puts("RRCA");
             break;
 
         case 0x11:
@@ -80,19 +80,19 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x12:
-            printf("LD (DE), A\n");
+            puts("LD (DE), A");
             break;
 
         case 0x13:
-            printf("INC DE\n");
+            puts("INC DE");
             break;
 
         case 0x14:
-            printf("INC D\n");
+            puts("INC D");
             break;
 
         case 0x15:
-            printf("DEC D\n");
+            puts("DEC D");
             break;
 
         case 0x16:
@@ -101,7 +101,7 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x17:
-            printf("RLA\n");
+            puts("RLA");
             break;
 
         case 0x18:
@@ -111,23 +111,23 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
 
         case 0x19:
-            printf("ADD HL, DE\n");
+            puts("ADD HL, DE");
             break;
 
         case 0x1A:
-            printf("LD A, (DE)\n");
+            puts("LD A, (DE)");
             break;
 
         case 0x1B:
-            printf("DEC DE\n");
+            puts("DEC DE");
             break;
 
         case 0x1C:
-            printf("INC E\n");
+            puts("INC E");
             break;
 
         case 0x1D:
-            printf("DEC E\n");
+            puts("DEC E");
             break;
 
         case 0x1E:
@@ -136,7 +136,7 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x1F:
-            printf("RRA\n");
+            puts("RRA");
             break;
 
         case 0x20:
@@ -150,19 +150,19 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x22:
-            printf("LD (HL+), A\n");
+            puts("LD (HL+), A");
             break;
 
         case 0x23:
-            printf("INC HL\n");
+            puts("INC HL");
             break;
 
         case 0x24:
-            printf("INC H\n");
+            puts("INC H");
             break;
 
         case 0x25:
-            printf("DEC H\n");
+            puts("DEC H");
             break;
 
         case 0x26:
@@ -176,23 +176,23 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x29:
-            printf("ADD HL, HL\n");
+            puts("ADD HL, HL");
             break;
 
         case 0x2A:
-            printf("LD A, (HL+)\n");
+            puts("LD A, (HL+)");
             break;
 
         case 0x2B:
-            printf("DEC HL\n");
+            puts("DEC HL");
             break;
 
         case 0x2C:
-            printf("INC L\n");
+            puts("INC L");
             break;
 
         case 0x2D:
-            printf("DEC L\n");
+            puts("DEC L");
             break;
 
         case 0x2E:
@@ -211,19 +211,19 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x32:
-            printf("LD (HL-), A\n");
+            puts("LD (HL-), A");
             break;
 
         case 0x33:
-            printf("INC SP\n");
+            puts("INC SP");
             break;
 
         case 0x34:
-            printf("INC (HL)\n");
+            puts("INC (HL)");
             break;
 
         case 0x35:
-            printf("DEC (HL)\n");
+            puts("DEC (HL)");
             break;
 
         case 0x36:
@@ -237,23 +237,23 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x39:
-            printf("ADD HL, SP\n");
+            puts("ADD HL, SP");
             break;
 
         case 0x3A:
-            printf("LD A, (HL-)\n");
+            puts("LD A, (HL-)");
             break;
 
         case 0x3B:
-            printf("DEC SP\n");
+            puts("DEC SP");
             break;
 
         case 0x3C:
-            printf("INC A\n");
+            puts("INC A");
             break;
 
         case 0x3D:
-            printf("DEC A\n");
+            puts("DEC A");
             break;
 
         case 0x3E:
@@ -262,515 +262,519 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0x40:
-            printf("LD B, B\n");
+            puts("LD B, B");
             break;
 
         case 0x41:
-            printf("LD B, C\n");
+            puts("LD B, C");
             break;
 
         case 0x42:
-            printf("LD B, D\n");
+            puts("LD B, D");
             break;
 
         case 0x43:
-            printf("LD B, E\n");
+            puts("LD B, E");
             break;
 
         case 0x44:
-            printf("LD B, H\n");
+            puts("LD B, H");
             break;
 
         case 0x45:
-            printf("LD B, L\n");
+            puts("LD B, L");
             break;
 
         case 0x46:
-            printf("LD B, (HL)\n");
+            puts("LD B, (HL)");
             break;
 
         case 0x47:
-            printf("LD B, A\n");
+            puts("LD B, A");
             break;
 
         case 0x48:
-            printf("LD C, B\n");
+            puts("LD C, B");
             break;
 
         case 0x49:
-            printf("LD C, C\n");
+            puts("LD C, C");
             break;
 
         case 0x4A:
-            printf("LD C, D\n");
+            puts("LD C, D");
             break;
 
         case 0x4B:
-            printf("LD C, E\n");
+            puts("LD C, E");
             break;
 
         case 0x4C:
-            printf("LD C, H\n");
+            puts("LD C, H");
             break;
 
         case 0x4D:
-            printf("LD C, L\n");
+            puts("LD C, L");
             break;
 
         case 0x4E:
-            printf("LD C, (HL)\n");
+            puts("LD C, (HL)");
             break;
 
         case 0x4F:
-            printf("LD C, A\n");
+            puts("LD C, A");
             break;
 
         case 0x50:
-            printf("LD D, B\n");
+            puts("LD D, B");
             break;
 
         case 0x51:
-            printf("LD D, C\n");
+            puts("LD D, C");
             break;
 
         case 0x52:
-            printf("LD D, D\n");
+            puts("LD D, D");
             break;
 
         case 0x53:
-            printf("LD D, E\n");
+            puts("LD D, E");
             break;
 
         case 0x54:
-            printf("LD D, H\n");
+            puts("LD D, H");
             break;
 
         case 0x55:
-            printf("LD D, L\n");
+            puts("LD D, L");
             break;
 
         case 0x56:
-            printf("LD D, (HL)\n");
+            puts("LD D, (HL)");
             break;
 
         case 0x57:
-            printf("LD D, A\n");
+            puts("LD D, A");
             break;
 
         case 0x58:
-            printf("LD E, B\n");
+            puts("LD E, B");
             break;
 
         case 0x59:
-            printf("LD E, C\n");
+            puts("LD E, C");
             break;
 
         case 0x5A:
-            printf("LD E, D\n");
+            puts("LD E, D");
             break;
 
         case 0x5B:
-            printf("LD E, E\n");
+            puts("LD E, E");
             break;
 
         case 0x5C:
-            printf("LD E, H\n");
+            puts("LD E, H");
             break;
 
         case 0x5D:
-            printf("LD E, L\n");
+            puts("LD E, L");
             break;
 
         case 0x5E:
-            printf("LD E, (HL)\n");
+            puts("LD E, (HL)");
             break;
 
         case 0x5F:
-            printf("LD E, A\n");
+            puts("LD E, A");
             break;
 
         case 0x60:
-            printf("LD H, B\n");
+            puts("LD H, B");
             break;
 
         case 0x61:
-            printf("LD H, C\n");
+            puts("LD H, C");
             break;
 
         case 0x62:
-            printf("LD H, D\n");
+            puts("LD H, D");
             break;
 
         case 0x63:
-            printf("LD H, E\n");
+            puts("LD H, E");
             break;
 
         case 0x64:
-            printf("LD H, H\n");
+            puts("LD H, H");
             break;
 
         case 0x65:
-            printf("LD H, L\n");
+            puts("LD H, L");
             break;
 
         case 0x66:
-            printf("LD H, (HL)\n");
+            puts("LD H, (HL)");
             break;
 
         case 0x67:
-            printf("LD H, A\n");
+            puts("LD H, A");
             break;
 
         case 0x68:
-            printf("LD L, B\n");
+            puts("LD L, B");
             break;
 
         case 0x69:
-            printf("LD L, C\n");
+            puts("LD L, C");
             break;
 
         case 0x6A:
-            printf("LD L, D\n");
+            puts("LD L, D");
             break;
 
         case 0x6B:
-            printf("LD L, E\n");
+            puts("LD L, E");
             break;
 
         case 0x6C:
-            printf("LD L, H\n");
+            puts("LD L, H");
             break;
 
         case 0x6D:
-            printf("LD L, L\n");
+            puts("LD L, L");
             break;
 
         case 0x6E:
-            printf("LD L, (HL)\n");
+            puts("LD L, (HL)");
             break;
 
         case 0x6F:
-            printf("LD L, A\n");
+            puts("LD L, A");
             break;
 
         case 0x70:
-            printf("LD (HL), B\n");
+            puts("LD (HL), B");
             break;
 
         case 0x71:
-            printf("LD (HL), C\n");
+            puts("LD (HL), C");
             break;
 
         case 0x72:
-            printf("LD (HL), D\n");
+            puts("LD (HL), D");
             break;
 
         case 0x73:
-            printf("LD (HL), E\n");
+            puts("LD (HL), E");
             break;
 
         case 0x74:
-            printf("LD (HL), H\n");
+            puts("LD (HL), H");
             break;
 
         case 0x75:
-            printf("LD (HL), L\n");
+            puts("LD (HL), L");
             break;
 
         case 0x77:
-            printf("LD (HL), A\n");
+            puts("LD (HL), A");
             break;
 
         case 0x78:
-            printf("LD A, B\n");
+            puts("LD A, B");
             break;
 
         case 0x79:
-            printf("LD A, C\n");
+            puts("LD A, C");
             break;
 
         case 0x7A:
-            printf("LD A, D\n");
+            puts("LD A, D");
             break;
 
         case 0x7B:
-            printf("LD A, E\n");
+            puts("LD A, E");
             break;
 
         case 0x7C:
-            printf("LD A, H\n");
+            puts("LD A, H");
             break;
 
         case 0x7D:
-            printf("LD A, L\n");
+            puts("LD A, L");
             break;
 
         case 0x7E:
-            printf("LD A, (HL)\n");
+            puts("LD A, (HL)");
             break;
 
         case 0x7F:
-            printf("LD A, A\n");
+            puts("LD A, A");
             break;
 
         case 0x80:
-            printf("ADD B\n");
+            puts("ADD B");
             break;
 
         case 0x81:
-            printf("ADD C\n");
+            puts("ADD C");
             break;
 
         case 0x82:
-            printf("ADD D\n");
+            puts("ADD D");
             break;
 
         case 0x83:
-            printf("ADD E\n");
+            puts("ADD E");
             break;
 
         case 0x84:
-            printf("ADD H\n");
+            puts("ADD H");
             break;
 
         case 0x85:
-            printf("ADD L\n");
+            puts("ADD L");
             break;
 
         case 0x86:
-            printf("ADD (HL)\n");
+            puts("ADD (HL)");
             break;
 
         case 0x87:
-            printf("ADD A\n");
+            puts("ADD A");
             break;
 
         case 0x88:
-            printf("ADC B\n");
+            puts("ADC B");
             break;
 
         case 0x89:
-            printf("ADC C\n");
+            puts("ADC C");
             break;
 
         case 0x8A:
-            printf("ADC D\n");
+            puts("ADC D");
             break;
 
         case 0x8B:
-            printf("ADC E\n");
+            puts("ADC E");
             break;
 
         case 0x8C:
-            printf("ADC H\n");
+            puts("ADC H");
             break;
 
         case 0x8D:
-            printf("ADC L\n");
+            puts("ADC L");
             break;
 
         case 0x8E:
-            printf("ADC (HL)\n");
+            puts("ADC (HL)");
             break;
 
         case 0x8F:
-            printf("ADC A\n");
+            puts("ADC A");
             break;
 
         case 0x90:
-            printf("SUB B\n");
+            puts("SUB B");
             break;
 
         case 0x91:
-            printf("SUB C\n");
+            puts("SUB C");
             break;
 
         case 0x92:
-            printf("SUB D\n");
+            puts("SUB D");
             break;
 
         case 0x93:
-            printf("SUB E\n");
+            puts("SUB E");
             break;
 
         case 0x94:
-            printf("SUB H\n");
+            puts("SUB H");
             break;
 
         case 0x95:
-            printf("SUB L\n");
+            puts("SUB L");
             break;
 
         case 0x96:
-            printf("SUB (HL)\n");
+            puts("SUB (HL)");
             break;
 
         case 0x97:
-            printf("SUB A\n");
+            puts("SUB A");
             break;
 
         case 0x98:
-            printf("SBC B\n");
+            puts("SBC B");
             break;
 
         case 0x99:
-            printf("SBC C\n");
+            puts("SBC C");
             break;
 
         case 0x9A:
-            printf("SBC D\n");
+            puts("SBC D");
             break;
 
         case 0x9B:
-            printf("SBC E\n");
+            puts("SBC E");
             break;
 
         case 0x9C:
-            printf("SBC H\n");
+            puts("SBC H");
             break;
 
         case 0x9D:
-            printf("SBC L\n");
+            puts("SBC L");
             break;
 
         case 0x9E:
-            printf("SBC (HL)\n");
+            puts("SBC (HL)");
             break;
 
         case 0x9F:
-            printf("SBC A\n");
+            puts("SBC A");
             break;
 
         case 0xA0:
-            printf("AND B\n");
+            puts("AND B");
             break;
 
         case 0xA1:
-            printf("AND C\n");
+            puts("AND C");
             break;
 
         case 0xA2:
-            printf("AND D\n");
+            puts("AND D");
             break;
 
         case 0xA3:
-            printf("AND E\n");
+            puts("AND E");
             break;
 
         case 0xA4:
-            printf("AND H\n");
+            puts("AND H");
             break;
 
         case 0xA5:
-            printf("AND L\n");
+            puts("AND L");
             break;
 
         case 0xA6:
-            printf("AND (HL)\n");
+            puts("AND (HL)");
             break;
 
         case 0xA7:
-            printf("AND A\n");
+            puts("AND A");
             break;
 
         case 0xA8:
-            printf("XOR B\n");
+            puts("XOR B");
             break;
 
         case 0xA9:
-            printf("XOR C\n");
+            puts("XOR C");
             break;
 
         case 0xAA:
-            printf("XOR D\n");
+            puts("XOR D");
             break;
 
         case 0xAB:
-            printf("XOR E\n");
+            puts("XOR E");
             break;
 
         case 0xAC:
-            printf("XOR H\n");
+            puts("XOR H");
             break;
 
         case 0xAD:
-            printf("XOR L\n");
+            puts("XOR L");
             break;
 
         case 0xAE:
-            printf("XOR (HL)\n");
+            puts("XOR (HL)");
             break;
 
         case 0xAF:
-            printf("XOR A\n");
+            puts("XOR A");
             break;
 
         case 0xB0:
-            printf("OR B\n");
+            puts("OR B");
             break;
 
         case 0xB1:
-            printf("OR C\n");
+            puts("OR C");
             break;
 
         case 0xB2:
-            printf("OR D\n");
+            puts("OR D");
             break;
 
         case 0xB3:
-            printf("OR E\n");
+            puts("OR E");
             break;
 
         case 0xB4:
-            printf("OR H\n");
+            puts("OR H");
             break;
 
         case 0xB5:
-            printf("OR L\n");
+            puts("OR L");
             break;
 
         case 0xB6:
-            printf("OR (HL)\n");
+            puts("OR (HL)");
             break;
 
         case 0xB7:
-            printf("OR A\n");
+            puts("OR A");
             break;
 
         case 0xB8:
-            printf("CP B\n");
+            puts("CP B");
             break;
 
         case 0xB9:
-            printf("CP C\n");
+            puts("CP C");
             break;
 
         case 0xBA:
-            printf("CP D\n");
+            puts("CP D");
             break;
 
         case 0xBB:
-            printf("CP E\n");
+            puts("CP E");
             break;
 
         case 0xBC:
-            printf("CP H\n");
+            puts("CP H");
             break;
 
         case 0xBD:
-            printf("CP L\n");
+            puts("CP L");
             break;
 
         case 0xBE:
-            printf("CP (HL)\n");
+            puts("CP (HL)");
             break;
 
         case 0xBF:
-            printf("CP A\n");
+            puts("CP A");
+            break;
+
+        case 0xC0:
+            puts("RET nz");
             break;
 
         case 0xC1:
-            printf("POP BC\n");
+            puts("POP BC");
             break;
 
         case 0xC2:
@@ -789,12 +793,20 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0xC5:
-            printf("PUSH BC\n");
+            puts("PUSH BC");
             break;
 
         case 0xC6:
             printf("ADD %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0xC8:
+            puts("RET z");
+            break;
+
+        case 0xC9:
+            puts("RET");
             break;
 
         case 0xCA:
@@ -822,8 +834,12 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0xD0:
+            puts("RET nc");
+            break;
+
         case 0xD1:
-            printf("POP DE\n");
+            puts("POP DE");
             break;
 
         case 0xD2:
@@ -837,12 +853,20 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0xD5:
-            printf("PUSH DE\n");
+            puts("PUSH DE");
             break;
 
         case 0xD6:
             printf("SUB %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0xD8:
+            puts("RET c");
+            break;
+
+        case 0xD9:
+            puts("RETI");
             break;
 
         case 0xDA:
@@ -866,15 +890,15 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0xE1:
-            printf("POP HL\n");
+            puts("POP HL");
             break;
 
         case 0xE2:
-            printf("LDH (C), A\n");
+            puts("LDH (C), A");
             break;
 
         case 0xE5:
-            printf("PUSH HL\n");
+            puts("PUSH HL");
             break;
 
         case 0xE6:
@@ -888,7 +912,7 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0xE9:
-            printf("JP HL\n");
+            puts("JP HL");
             break;
 
         case 0xEA:
@@ -907,15 +931,15 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0xF1:
-            printf("POP AF\n");
+            puts("POP AF");
             break;
 
         case 0xF2:
-            printf("LDH A, (C)\n");
+            puts("LDH A, (C)");
             break;
 
         case 0xF5:
-            printf("PUSH AF\n");
+            puts("PUSH AF");
             break;
 
         case 0xF6:
@@ -928,7 +952,7 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         case 0xF9:
-            printf("LD SP, HL\n");
+            puts("LD SP, HL");
             break;
 
         case 0xFA:
@@ -942,7 +966,7 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             break;
 
         default:
-            printf("Unknown opcode\n");
+            puts("Unknown opcode");
             break;
     }
 
