@@ -801,6 +801,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0xC7:
+            puts("RST 0x00");
+            break;
+
         case 0xC8:
             puts("RET z");
             break;
@@ -834,6 +838,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0xCF:
+            puts("RST 0x08");
+            break;
+
         case 0xD0:
             puts("RET nc");
             break;
@@ -861,6 +869,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0xD7:
+            puts("RST 0x10");
+            break;
+
         case 0xD8:
             puts("RET c");
             break;
@@ -882,6 +894,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0xDE:
             printf("SBC %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0xDF:
+            puts("RST 0x18");
             break;
 
         case 0xE0:
@@ -906,6 +922,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0xE7:
+            puts("RST 0x20");
+            break;
+
         case 0xE8:
             printf("ADD SP, %d\n", (signed char) buffer[pc + 1]);
             length++;
@@ -923,6 +943,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0xEE:
             printf("XOR %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0xEF:
+            puts("RST 0x28");
             break;
 
         case 0xF0:
@@ -944,6 +968,11 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0xF6:
             printf("OR %X\n", buffer[pc + 1]);
+            length++;
+            break;
+
+        case 0xF7:
+            puts("RST 0x30");
             break;
 
         case 0xF8:
@@ -963,6 +992,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0xFE:
             printf("CP %X", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0xFF:
+            puts("RST 0x38");
             break;
 
         default:
