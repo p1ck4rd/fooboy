@@ -10,6 +10,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
     printf("PC: %X OP: %X\n", pc, opcode);
 
     switch (opcode) {
+        case 0x00:
+            puts("NOP");
+            break;
+
         case 0x01:
             printf("LD BC, %X%X\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
@@ -72,6 +76,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x0F:
             puts("RRCA");
+            break;
+
+        case 0x10:
+            puts("STOP");
             break;
 
         case 0x11:
@@ -170,6 +178,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0x27:
+            puts("DAA");
+            break;
+
         case 0x28:
             printf("JR z, %d\n", (signed char) buffer[pc + 1]);
             length++;
@@ -198,6 +210,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0x2E:
             printf("LD L, %x\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0x2F:
+            puts("CPL");
             break;
 
         case 0x30:
@@ -231,6 +247,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             length++;
             break;
 
+        case 0x37:
+            puts("SCF");
+            break;
+
         case 0x38:
             printf("JR c, %d\n", (signed char) buffer[pc + 1]);
             length++;
@@ -259,6 +279,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0x3E:
             printf("LD A, %X\n", buffer[pc + 1]);
             length++;
+            break;
+
+        case 0x3F:
+            puts("CCF");
             break;
 
         case 0x40:
@@ -475,6 +499,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
 
         case 0x75:
             puts("LD (HL), L");
+            break;
+
+        case 0x76:
+            puts("HALT");
             break;
 
         case 0x77:
@@ -962,6 +990,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
             puts("LDH A, (C)");
             break;
 
+        case 0xF3:
+            puts("DI");
+            break;
+
         case 0xF5:
             puts("PUSH AF");
             break;
@@ -987,6 +1019,10 @@ unsigned char disassemble(unsigned char *buffer, int pc) {
         case 0xFA:
             printf("LD A, (%X%X)\n", buffer[pc + 2], buffer[pc + 1]);
             length += 2;
+            break;
+
+        case 0xFB:
+            puts("EI");
             break;
 
         case 0xFE:
