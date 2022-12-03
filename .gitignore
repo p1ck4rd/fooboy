@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Visual Studio Code project settings
+.vscode
+
+# CLion project settings
+.idea
